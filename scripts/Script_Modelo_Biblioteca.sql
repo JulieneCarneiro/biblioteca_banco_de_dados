@@ -57,27 +57,27 @@ CREATE TABLE IF NOT EXISTS `Editoras` (
   `id` int PRIMARY KEY,
   `empresa` varchar(264),
   `cnpj` varchar(14),
-  `telefone` int,
+  `telefone` varchar(11),
   `email` varchar(264)
 );
 
 CREATE TABLE IF NOT EXISTS `Generos` (
   `id` int PRIMARY KEY,
   `categoria` enum(
-  'comedia', 
-  'acao', 
-  'suspense',
-  'drama',
-  'ficcao', 
-  'terror',
-  'policial',
-  'romance',
-  'aventura',
-  'realismo',
-  'parnasialismo',
-  'simbolismo',
-  'academicos',
-  'literatura universal'
+  'Comédia', 
+  'Ação', 
+  'Suspense',
+  'Drama',
+  'Ficção', 
+  'Terror',
+  'Policial',
+  'Romance',
+  'Aventura',
+  'Realismo',
+  'Parnasialismo',
+  'Simbolismo',
+  'Acadêmicos',
+  'Literatura Universal'
  )
 );
 
