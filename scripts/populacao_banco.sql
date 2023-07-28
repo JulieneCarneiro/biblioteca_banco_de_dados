@@ -8,11 +8,18 @@ INSERT INTO `Enderecos` VALUES
  (5,'Cabeça de Porco',18,'21000001','Cortiço Do João Romão');
  
  INSERT INTO `Editoras` VALUES 
-  (1,'Adeus Internacional',),
-  (2,'Livro de Folhas',),
-  (3,'Imprensa Solta Pendurada',),
-  (4,'A editora',),
-  (5,'Planeta Solitário',);
+  (1,'Adeus Internacional','07226128000117','334155678','adeusinternacional@gmail.com'),
+  (2,'Livro de Folhas','09226158000187','234645679','livrosfolhas@yahoo.com.br'),
+  (3,'Imprensa Solta Pendurada','05427159000135','264675689','imprensasoltinha@bol.com'),
+  (4,'A editora','07436198000128','254645789','aeditora@yahoo.com.br'),
+  (5,'Planeta Solitário','01786156000189','235944379','platenasolitario@hotmail.com.br');
+ 
+ INSERT INTO `Generos` VALUES
+   (1,'Comédia'),
+   (2,'Ação'), 
+   (3,'Suspense'),
+   (4,'Drama'),
+   (5,'Ficção');
  
  
  INSERT INTO `Pessoas` VALUES
@@ -21,3 +28,10 @@ INSERT INTO `Enderecos` VALUES
   (3,'Cascão de Souza','cascao@turmadamonica.com','01010101010','11961611616','1961-08-01',5),
   (4,'Senhor Torto','tortodesentortador@desentortando.com','43434343431','43434343432','1913-10-19',2),
   (5,'Dona Creuza','creuzinhagatinha@bol.com','01123456789','98765432110','1980-08-03',3);
+  
+  INSERT INTO `Usuarios` VALUES 
+  (1,'1234567',1),
+  (2,'6754323',2),
+  (3,'3456765',3),
+  (4,'4565898',4),
+  (5,'5698765',5);
