@@ -1,7 +1,9 @@
+--  comando para criar o banco de dados 
 CREATE DATABASE IF NOT EXISTS `Biblioteca`;
 
 USE `Biblioteca`;
 
+-- comando para criar a tabela livros com os atributos 
 CREATE TABLE IF NOT EXISTS `Livros` (
     `id` INT PRIMARY KEY,
     `titulo` VARCHAR(264),
@@ -16,6 +18,7 @@ CREATE TABLE IF NOT EXISTS `Livros` (
     `id_editoras_fk` INT
 );
 
+-- comando para criar a tabela pessoas com os atributos 
 CREATE TABLE IF NOT EXISTS `Pessoas` (
   `id` int PRIMARY KEY,
   `nome` varchar(264),
@@ -26,12 +29,14 @@ CREATE TABLE IF NOT EXISTS `Pessoas` (
   `id_enderecos_fk` int
 );
 
+-- comando para criar a tabela usuarios com os atributos 
 CREATE TABLE IF NOT EXISTS `Usuarios` (
   `id` int PRIMARY KEY,
   `senha` varchar(264),
   `id_pessoas_fk` int
 );
 
+-- comando para criar a tabela funcionarios com os atributos 
 CREATE TABLE IF NOT EXISTS `Funcionarios` (
   `id` int PRIMARY KEY,
   `senha` varchar(264),
@@ -39,12 +44,14 @@ CREATE TABLE IF NOT EXISTS `Funcionarios` (
   `id_pessoas_fk` int
 );
 
+-- comando para criar a tabela autores com os atributos 
 CREATE TABLE IF NOT EXISTS `Autores` (
   `id` int PRIMARY KEY,
   `quantidade_livros` int,
   `id_pessoas_fk` int
 );
 
+-- comando para criar a tabela enderecos com os atributos 
 CREATE TABLE IF NOT EXISTS `Enderecos` (
   `id` int PRIMARY KEY,
   `rua` varchar(264),
@@ -53,6 +60,7 @@ CREATE TABLE IF NOT EXISTS `Enderecos` (
   `complemento` varchar(264)
 );
 
+-- comando para criar a tabela editoras com os atributos 
 CREATE TABLE IF NOT EXISTS `Editoras` (
   `id` int PRIMARY KEY,
   `empresa` varchar(264),
@@ -61,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `Editoras` (
   `email` varchar(264)
 );
 
+-- comando para criar a tabela generos com os atributos 
 CREATE TABLE IF NOT EXISTS `Generos` (
   `id` int PRIMARY KEY,
   `categoria` enum(
@@ -81,6 +90,7 @@ CREATE TABLE IF NOT EXISTS `Generos` (
  )
 );
 
+-- comando para criar a tabela emprestimos com os atributos 
 CREATE TABLE IF NOT EXISTS `Emprestimos` (
   `id` int PRIMARY KEY,
   `data_emprestimo` timestamp,
@@ -90,6 +100,7 @@ CREATE TABLE IF NOT EXISTS `Emprestimos` (
   `id_usuarios_fk` int
 );
 
+--   comando para adicionar as chaves estrangeiras 
 ALTER TABLE `Livros` ADD FOREIGN KEY (`id_autores_fk`) REFERENCES `Autores` (`id`);
 
 ALTER TABLE `Livros` ADD FOREIGN KEY (`id_generos_fk`) REFERENCES `Generos` (`id`);
