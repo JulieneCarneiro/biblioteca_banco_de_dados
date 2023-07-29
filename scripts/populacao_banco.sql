@@ -35,3 +35,11 @@ INSERT INTO `Enderecos` VALUES
   (3,'3456765',3),
   (4,'4565898',4),
   (5,'5698765',5);
+  
+  INSERT INTO `Funcionarios` VALUES 
+  (1,'1239123','Assistente',4),
+  (2,'1984753','Bibliotecario',2),
+  (3,'8674394','Bibliotecario',1),
+  (4,'9842340','Recepcionista',3),
+  (5,'8759095','Auxiliar de Serviços Gerais',5);
+  
