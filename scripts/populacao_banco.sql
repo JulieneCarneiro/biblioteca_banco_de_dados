@@ -43,3 +43,10 @@ INSERT INTO `Enderecos` VALUES
   (4,'9842340','Recepcionista',3),
   (5,'8759095','Auxiliar de Serviços Gerais',5);
   
+  INSERT INTO `Autores` VALUES 
+  (1,3,5),
+  (2,5,3),
+  (3,1,1),
+  (4,2,2),
+  (5,4,4);
+  
