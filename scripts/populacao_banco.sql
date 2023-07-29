@@ -50,3 +50,10 @@ INSERT INTO `Enderecos` VALUES
   (4,2,2),
   (5,4,4);
   
+  INSERT INTO `Livros` VALUES 
+  (1,'If Tomorrow Doesnt Come','2023-05-09','1º Edição',1362,'Inglês',true,3,4,1),
+  (2,'O Poder do Hábito','2012-02-28','3 Edição',9286,'pt_BR',true,1,3,5),
+  (3,'Cosmos','1980-01-01','2 Edição',2946,'pt_BR',true,5,2,4),
+  (4,'Maybe you should talk to someone','2019-04-02','2 Edição',2057,'Inglês',true,2,1,3),
+  (5,'A Louca dos Gatos','2018-07-13','1 Edição',0567,'pt_BR',true,3,5,2);
+  
